@@ -1,0 +1,1 @@
+{"name":"bellhaven-sync-review","private":true,"scripts":{"dev":".venv/bin/python app.py"}}
