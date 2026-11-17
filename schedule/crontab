@@ -1,0 +1,5 @@
+# Daily at 06:00 America/New_York. Install on persistent host, not ephemeral CI.
+# .env is mode 600; data/ledger.sqlite must persist across runs.
+CRON_TZ=America/New_York
+0 6 * * * cd /opt/bellhaven-sync && /usr/bin/flock -n data/pipeline.lock .venv/bin/python sync.py >> data/daily.log 2>&1
+# This only discovers/proposes. NEVER schedule review_session.py or approval calls.

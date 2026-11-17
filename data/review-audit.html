@@ -1,0 +1,2331 @@
+<!doctype html><meta charset="utf-8"><title>Bellhaven decision audit</title><style>body{max-width:1000px;margin:40px auto;font:16px system-ui;color:#173f33}article{padding:20px;border-bottom:1px solid #ccc}pre{white-space:pre-wrap;font-size:12px}</style><h1>Bellhaven decision audit</h1><p>Actual CRM decisions by Codex (AI reviewer). This is a read-only export.</p><article><h2>Amberly Manor</h2><b>applied</b><p>Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.</p><p>2026-11-16T19:38:13.763907+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;missing&quot;,
+  &quot;title&quot;: &quot;Amberly Manor&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Amberly Manor&quot;,
+      &quot;billing_street&quot;: &quot;4390 Darrow Rd&quot;,
+      &quot;billing_city&quot;: &quot;Hudson&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44236&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/amberly-manor&quot;,
+      &quot;evidence&quot;: &quot;Amberly Manor Address 4390 Darrow Rd Hudson, OH 44236 Care Offerings Assisted Living Administrator Tom Trent Phone (330) 228-4392 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:48.635380+00:00&quot;
+    },
+    &quot;candidates&quot;: [],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Amberly Manor&quot;,
+        &quot;billing_street&quot;: &quot;4390 Darrow Rd&quot;,
+        &quot;billing_city&quot;: &quot;Hudson&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44236&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;status&quot;: &quot;Active&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;6f622601d04496e6eb266d85&quot;
+}</pre></details></article><article><h2>Bellhaven Crossings of Lima</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:14.659667+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven Crossings of Lima&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Crossings of Lima&quot;,
+      &quot;billing_street&quot;: &quot;3115 N Cole St&quot;,
+      &quot;billing_city&quot;: &quot;Lima&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45801&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-crossings-of-lima&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Crossings of Lima Address 3115 N Cole St Lima, OH 45801 Care Offerings Assisted Living Administrator Tricia Fitch Phone (231) 539-3617 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:46.494767+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001LGFPBJY4N9MB6KL&quot;,
+        &quot;name&quot;: &quot;Bellhaven Crossings of Lima&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3115 N Cole St&quot;,
+        &quot;billing_city&quot;: &quot;Lima&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45801&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(734) 872-9575&quot;,
+        &quot;lifetime_revenue&quot;: 47000,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001LGFPBJY4N9MB6KL&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001LGFPBJY4N9MB6KL&quot;,
+        &quot;name&quot;: &quot;Bellhaven Crossings of Lima&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3115 N Cole St&quot;,
+        &quot;billing_city&quot;: &quot;Lima&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45801&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(734) 872-9575&quot;,
+        &quot;lifetime_revenue&quot;: 47000,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;cdb4e75204de29d508a9e403&quot;
+}</pre></details></article><article><h2>Cedar Trail of Monroe</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:15.093445+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Cedar Trail of Monroe&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Gardens of Monroe&quot;,
+      &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+      &quot;billing_city&quot;: &quot;Monroe&quot;,
+      &quot;billing_state&quot;: &quot;MI&quot;,
+      &quot;billing_zip&quot;: &quot;48162&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-gardens-of-monroe&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Gardens of Monroe Address 750 Stewart Rd Monroe, MI 48162 Care Offerings Assisted Living Administrator Phil Mabry Phone (814) 412-2218 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.989085+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001U1750VLVJAGG1S5&quot;,
+        &quot;name&quot;: &quot;Bellhaven Gardens of Monroe&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(814) 291-2902&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;0011AB44D05WLA9HTX&quot;,
+        &quot;name&quot;: &quot;Cedar Trail of Monroe&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Road&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 748-7799&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;00159PL81N38KM4FHM&quot;,
+        &quot;name&quot;: &quot;Monroe Gardens Care Center&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 501-4496&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;0011AB44D05WLA9HTX&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;0011AB44D05WLA9HTX&quot;,
+        &quot;name&quot;: &quot;Cedar Trail of Monroe&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Road&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 748-7799&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;001U1750VLVJAGG1S5&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 001U1750VLVJAGG1S5; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;df06b48e31ef9198b705226f&quot;
+}</pre></details></article><article><h2>Monroe Gardens Care Center</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:15.566782+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Monroe Gardens Care Center&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Gardens of Monroe&quot;,
+      &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+      &quot;billing_city&quot;: &quot;Monroe&quot;,
+      &quot;billing_state&quot;: &quot;MI&quot;,
+      &quot;billing_zip&quot;: &quot;48162&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-gardens-of-monroe&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Gardens of Monroe Address 750 Stewart Rd Monroe, MI 48162 Care Offerings Assisted Living Administrator Phil Mabry Phone (814) 412-2218 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.989085+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001U1750VLVJAGG1S5&quot;,
+        &quot;name&quot;: &quot;Bellhaven Gardens of Monroe&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(814) 291-2902&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;0011AB44D05WLA9HTX&quot;,
+        &quot;name&quot;: &quot;Cedar Trail of Monroe&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Road&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 748-7799&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;00159PL81N38KM4FHM&quot;,
+        &quot;name&quot;: &quot;Monroe Gardens Care Center&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 501-4496&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;00159PL81N38KM4FHM&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;00159PL81N38KM4FHM&quot;,
+        &quot;name&quot;: &quot;Monroe Gardens Care Center&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;750 Stewart Rd&quot;,
+        &quot;billing_city&quot;: &quot;Monroe&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48162&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 501-4496&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;001U1750VLVJAGG1S5&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 001U1750VLVJAGG1S5; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;e3b4a19537760d0d758d144b&quot;
+}</pre></details></article><article><h2>Bellhaven Healthcare Centre of Ashland</h2><b>rejected</b><p>Name-only spelling/style difference: Health Care Center vs Healthcare Centre identifies the same facility with exact address. Retain this valid CRM alias; no ownership or address correction needed.</p><p>2026-11-16T19:38:15.979664+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven Healthcare Centre of Ashland&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Healthcare Centre of Ashland&quot;,
+      &quot;billing_street&quot;: &quot;1631 Claremont Ave&quot;,
+      &quot;billing_city&quot;: &quot;Ashland&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44805&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-healthcare-centre-of-ashland&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Healthcare Centre of Ashland Address 1631 Claremont Ave Ashland, OH 44805 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Carla Okafor Phone (517) 314-5115 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.118469+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001RJ0D7Z5MAZN5HX5&quot;,
+        &quot;name&quot;: &quot;Bellhaven Health Care Center of Ashland&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1631 Claremont Ave&quot;,
+        &quot;billing_city&quot;: &quot;Ashland&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44805&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(734) 319-7813&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001RJ0D7Z5MAZN5HX5&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001RJ0D7Z5MAZN5HX5&quot;,
+        &quot;name&quot;: &quot;Bellhaven Health Care Center of Ashland&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1631 Claremont Ave&quot;,
+        &quot;billing_city&quot;: &quot;Ashland&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44805&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(734) 319-7813&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven Healthcare Centre of Ashland&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;053776461ccfca42995e2ba4&quot;
+}</pre></details></article><article><h2>Bellhaven Meadows of Findlay</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:16.023643+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven Meadows of Findlay&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Meadows of Findlay&quot;,
+      &quot;billing_street&quot;: &quot;1800 N Blanchard St&quot;,
+      &quot;billing_city&quot;: &quot;Findlay&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45840&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living / Memory Support&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-meadows-of-findlay&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Meadows of Findlay Address 1800 N Blanchard St Findlay, OH 45840 Care Offerings Assisted Living Memory Support Administrator Sam Pruitt Phone (231) 533-2969 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:42.347130+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001UKEFGADQ8YCZ4YM&quot;,
+        &quot;name&quot;: &quot;Bellhaven Meadows of Findlay&quot;,
+        &quot;parent_id&quot;: &quot;&quot;,
+        &quot;parent_name&quot;: &quot;&quot;,
+        &quot;billing_street&quot;: &quot;1800 N Blanchard St&quot;,
+        &quot;billing_city&quot;: &quot;Findlay&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45840&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 975-2492&quot;,
+        &quot;lifetime_revenue&quot;: 22000,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001UKEFGADQ8YCZ4YM&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001UKEFGADQ8YCZ4YM&quot;,
+        &quot;name&quot;: &quot;Bellhaven Meadows of Findlay&quot;,
+        &quot;parent_id&quot;: &quot;&quot;,
+        &quot;parent_name&quot;: &quot;&quot;,
+        &quot;billing_street&quot;: &quot;1800 N Blanchard St&quot;,
+        &quot;billing_city&quot;: &quot;Findlay&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45840&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 975-2492&quot;,
+        &quot;lifetime_revenue&quot;: 22000,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;care_type&quot;: &quot;Assisted Living / Memory Support&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;1a8587ab057d316e17b6cab2&quot;
+}</pre></details></article><article><h2>Bellhaven Rehabilitation &amp; Nursing of Grove City</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:16.463115+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven Rehabilitation &amp; Nursing of Grove City&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Rehabilitation &amp; Nursing of Grove City&quot;,
+      &quot;billing_street&quot;: &quot;3985 Broadway&quot;,
+      &quot;billing_city&quot;: &quot;Grove City&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;43123&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-rehabilitation-nursing-of-grove-city&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Rehabilitation &amp; Nursing of Grove City Address 3985 Broadway Grove City, OH 43123 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Marie Vogel Phone (614) 555-7729 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:44.608788+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001TZCSTBZFM6K5BGN&quot;,
+        &quot;name&quot;: &quot;Bellhaven Rehab and Nursing of Grove City&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3985 Broadway&quot;,
+        &quot;billing_city&quot;: &quot;Grove City&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43123&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(614) 555-7729&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001TZCSTBZFM6K5BGN&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001TZCSTBZFM6K5BGN&quot;,
+        &quot;name&quot;: &quot;Bellhaven Rehab and Nursing of Grove City&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3985 Broadway&quot;,
+        &quot;billing_city&quot;: &quot;Grove City&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43123&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(614) 555-7729&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven Rehabilitation &amp; Nursing of Grove City&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;e214aa1667ca68b776d01bb2&quot;
+}</pre></details></article><article><h2>Bellhaven Shores of Erie</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:16.949642+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven Shores of Erie&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Shores of Erie&quot;,
+      &quot;billing_street&quot;: &quot;4930 W Lake Rd&quot;,
+      &quot;billing_city&quot;: &quot;Erie&quot;,
+      &quot;billing_state&quot;: &quot;PA&quot;,
+      &quot;billing_zip&quot;: &quot;16505&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living / Memory Support&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-shores-of-erie&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Shores of Erie Address 4930 W Lake Rd Erie, PA 16505 Care Offerings Assisted Living Memory Support Administrator Angela Quinn Phone (614) 792-9343 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.642677+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001CVBBCSDM7YHN220&quot;,
+        &quot;name&quot;: &quot;Bellhaven Shores of Erie&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;4930 W Lake Rd&quot;,
+        &quot;billing_city&quot;: &quot;Erie&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;16505&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 495-1741&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001BLYF02K97SZLZHH&quot;,
+        &quot;name&quot;: &quot;Harborview Shores of Erie&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;4930 West Lake Road&quot;,
+        &quot;billing_city&quot;: &quot;Erie&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;16505&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 775-8456&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001CVBBCSDM7YHN220&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001CVBBCSDM7YHN220&quot;,
+        &quot;name&quot;: &quot;Bellhaven Shores of Erie&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;4930 W Lake Rd&quot;,
+        &quot;billing_city&quot;: &quot;Erie&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;16505&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 495-1741&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;care_type&quot;: &quot;Assisted Living / Memory Support&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;896f812c4fce53d25b437f05&quot;
+}</pre></details></article><article><h2>Harborview Shores of Erie</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:17.373671+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Harborview Shores of Erie&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Shores of Erie&quot;,
+      &quot;billing_street&quot;: &quot;4930 W Lake Rd&quot;,
+      &quot;billing_city&quot;: &quot;Erie&quot;,
+      &quot;billing_state&quot;: &quot;PA&quot;,
+      &quot;billing_zip&quot;: &quot;16505&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living / Memory Support&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-shores-of-erie&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Shores of Erie Address 4930 W Lake Rd Erie, PA 16505 Care Offerings Assisted Living Memory Support Administrator Angela Quinn Phone (614) 792-9343 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.642677+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001CVBBCSDM7YHN220&quot;,
+        &quot;name&quot;: &quot;Bellhaven Shores of Erie&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;4930 W Lake Rd&quot;,
+        &quot;billing_city&quot;: &quot;Erie&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;16505&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 495-1741&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001BLYF02K97SZLZHH&quot;,
+        &quot;name&quot;: &quot;Harborview Shores of Erie&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;4930 West Lake Road&quot;,
+        &quot;billing_city&quot;: &quot;Erie&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;16505&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 775-8456&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001BLYF02K97SZLZHH&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001BLYF02K97SZLZHH&quot;,
+        &quot;name&quot;: &quot;Harborview Shores of Erie&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;4930 West Lake Road&quot;,
+        &quot;billing_city&quot;: &quot;Erie&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;16505&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 775-8456&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;001CVBBCSDM7YHN220&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 001CVBBCSDM7YHN220; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;5e624b84d0bf045920e92d94&quot;
+}</pre></details></article><article><h2>Bellhaven Willow Creek</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:17.800833+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven Willow Creek&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven Willow Creek&quot;,
+      &quot;billing_street&quot;: &quot;8060 Willow Creek Ln&quot;,
+      &quot;billing_city&quot;: &quot;Portage&quot;,
+      &quot;billing_state&quot;: &quot;MI&quot;,
+      &quot;billing_zip&quot;: &quot;49024&quot;,
+      &quot;care_type&quot;: &quot;Memory Support&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-willow-creek&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven Willow Creek Address 8060 Willow Creek Ln Portage, MI 49024 Care Offerings Memory Support Administrator Walt Mabry Phone (419) 394-5494 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:47.035701+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;0017MN2JYAJBDS8WQZ&quot;,
+        &quot;name&quot;: &quot;Sunny Acres Retirement Home&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;8060 Willow Creek Lane&quot;,
+        &quot;billing_city&quot;: &quot;Portage&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;49024&quot;,
+        &quot;care_type&quot;: &quot;Memory Care&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 898-7925&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;0017MN2JYAJBDS8WQZ&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;0017MN2JYAJBDS8WQZ&quot;,
+        &quot;name&quot;: &quot;Sunny Acres Retirement Home&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;8060 Willow Creek Lane&quot;,
+        &quot;billing_city&quot;: &quot;Portage&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;49024&quot;,
+        &quot;care_type&quot;: &quot;Memory Care&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 898-7925&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven Willow Creek&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;585e3fcf85bc5228633a3931&quot;
+}</pre></details></article><article><h2>Bellhaven at Sycamore Ridge</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:18.256708+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven at Sycamore Ridge&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven at Sycamore Ridge&quot;,
+      &quot;billing_street&quot;: &quot;7420 Sycamore Ridge Dr&quot;,
+      &quot;billing_city&quot;: &quot;Miamisburg&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45342&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-sycamore-ridge&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven at Sycamore Ridge Address 7420 Sycamore Ridge Dr Miamisburg, OH 45342 Care Offerings Assisted Living Administrator Tom Bloom Phone (260) 365-6510 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:44.770817+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;00191H7JR16471SZ34&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Sycamore Ridge&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;7420 Sycamore Ridge Dr&quot;,
+        &quot;billing_city&quot;: &quot;Miamisburg&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45342&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 982-7764&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;00191H7JR16471SZ34&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;00191H7JR16471SZ34&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Sycamore Ridge&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;7420 Sycamore Ridge Dr&quot;,
+        &quot;billing_city&quot;: &quot;Miamisburg&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45342&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 982-7764&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven at Sycamore Ridge&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;3377aed4603da01f93e3dd5d&quot;
+}</pre></details></article><article><h2>Bellhaven at Union Square</h2><b>applied</b><p>Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.</p><p>2026-11-16T19:38:18.755222+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;missing&quot;,
+  &quot;title&quot;: &quot;Bellhaven at Union Square&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven at Union Square&quot;,
+      &quot;billing_street&quot;: &quot;118 Union Square Dr&quot;,
+      &quot;billing_city&quot;: &quot;New Albany&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;43054&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-union-square&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven at Union Square Address 118 Union Square Dr New Albany, OH 43054 Care Offerings Assisted Living Administrator Phil Holloway Phone (330) 519-9639 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:47.939478+00:00&quot;
+    },
+    &quot;candidates&quot;: [],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven at Union Square&quot;,
+        &quot;billing_street&quot;: &quot;118 Union Square Dr&quot;,
+        &quot;billing_city&quot;: &quot;New Albany&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43054&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;status&quot;: &quot;Active&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;207017c47ca35b055cd426f9&quot;
+}</pre></details></article><article><h2>Bellhaven of Ashtabula</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:19.380069+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Ashtabula&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Ashtabula&quot;,
+      &quot;billing_street&quot;: &quot;3156 W Prospect Rd&quot;,
+      &quot;billing_city&quot;: &quot;Ashtabula&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44004&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-ashtabula&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Ashtabula Address 3156 W Prospect Rd Ashtabula, OH 44004 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Ned Green Phone (260) 440-4975 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:47.221091+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001NXP9X46CWEPSLSV&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Ashtabula&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;PO Box 517&quot;,
+        &quot;billing_city&quot;: &quot;Ashtabula&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44004&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(260) 440-4975&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001NXP9X46CWEPSLSV&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001NXP9X46CWEPSLSV&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Ashtabula&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;PO Box 517&quot;,
+        &quot;billing_city&quot;: &quot;Ashtabula&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44004&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(260) 440-4975&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;billing_street&quot;: &quot;3156 W Prospect Rd&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;89a9d40d031f9f7f5b545fb6&quot;
+}</pre></details></article><article><h2>Bellhaven of Batavia</h2><b>applied</b><p>Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.</p><p>2026-11-16T19:38:19.817300+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;missing&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Batavia&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Batavia&quot;,
+      &quot;billing_street&quot;: &quot;2000 Hospital Dr&quot;,
+      &quot;billing_city&quot;: &quot;Batavia&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45103&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-batavia&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Batavia Address 2000 Hospital Dr Batavia, OH 45103 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Elaine Lindqvist Phone (231) 698-3092 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:47.768239+00:00&quot;
+    },
+    &quot;candidates&quot;: [],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Batavia&quot;,
+        &quot;billing_street&quot;: &quot;2000 Hospital Dr&quot;,
+        &quot;billing_city&quot;: &quot;Batavia&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45103&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;status&quot;: &quot;Active&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;f0dc58ac0bed2426ed745808&quot;
+}</pre></details></article><article><h2>Bellhaven of Carlisle</h2><b>applied</b><p>Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.</p><p>2026-11-16T19:38:20.442482+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;missing&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Carlisle&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Carlisle&quot;,
+      &quot;billing_street&quot;: &quot;640 Walnut Bottom Rd&quot;,
+      &quot;billing_city&quot;: &quot;Carlisle&quot;,
+      &quot;billing_state&quot;: &quot;PA&quot;,
+      &quot;billing_zip&quot;: &quot;17015&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-carlisle&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Carlisle Address 640 Walnut Bottom Rd Carlisle, PA 17015 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Ken Ashby Phone (260) 386-7765 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:48.105158+00:00&quot;
+    },
+    &quot;candidates&quot;: [],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Carlisle&quot;,
+        &quot;billing_street&quot;: &quot;640 Walnut Bottom Rd&quot;,
+        &quot;billing_city&quot;: &quot;Carlisle&quot;,
+        &quot;billing_state&quot;: &quot;PA&quot;,
+        &quot;billing_zip&quot;: &quot;17015&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;status&quot;: &quot;Active&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;aa23ce46b558496dd0881076&quot;
+}</pre></details></article><article><h2>Bellhaven of Chagrin Falls</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:21.083446+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Chagrin Falls&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Chagrin Falls&quot;,
+      &quot;billing_street&quot;: &quot;150 River St&quot;,
+      &quot;billing_city&quot;: &quot;Chagrin Falls&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44022&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chagrin-falls&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Chagrin Falls Address 150 River St Chagrin Falls, OH 44022 Care Offerings Assisted Living Administrator Dale Mabry Phone (231) 283-7448 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:46.856708+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001RJU1X4NBWC1Q0G7&quot;,
+        &quot;name&quot;: &quot;Riverbend Manor Care Center&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;150 River St&quot;,
+        &quot;billing_city&quot;: &quot;Chagrin Falls&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44022&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 457-9548&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001RJU1X4NBWC1Q0G7&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001RJU1X4NBWC1Q0G7&quot;,
+        &quot;name&quot;: &quot;Riverbend Manor Care Center&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;150 River St&quot;,
+        &quot;billing_city&quot;: &quot;Chagrin Falls&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44022&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 457-9548&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Chagrin Falls&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;69414d493d7de933236c3e35&quot;
+}</pre></details></article><article><h2>Bellhaven of Chesterton</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:21.569277+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Chesterton&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Chesterton&quot;,
+      &quot;billing_street&quot;: &quot;1250 NW Franklin Street&quot;,
+      &quot;billing_city&quot;: &quot;Chesterton&quot;,
+      &quot;billing_state&quot;: &quot;IN&quot;,
+      &quot;billing_zip&quot;: &quot;46304&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chesterton&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Chesterton Address 1250 NW Franklin Street Chesterton, IN 46304 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Karen Reyes Phone (216) 551-3978 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:48.804726+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;0013NUZQHQUEZ8DXEG&quot;,
+        &quot;name&quot;: &quot;Chesterton Senior Commons&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1250 Northwest Franklin St&quot;,
+        &quot;billing_city&quot;: &quot;Chesterton&quot;,
+        &quot;billing_state&quot;: &quot;IN&quot;,
+        &quot;billing_zip&quot;: &quot;46304&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 551-3978&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;0013NUZQHQUEZ8DXEG&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;0013NUZQHQUEZ8DXEG&quot;,
+        &quot;name&quot;: &quot;Chesterton Senior Commons&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1250 Northwest Franklin St&quot;,
+        &quot;billing_city&quot;: &quot;Chesterton&quot;,
+        &quot;billing_state&quot;: &quot;IN&quot;,
+        &quot;billing_zip&quot;: &quot;46304&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 551-3978&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Chesterton&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;f240a2587d907f83d98d0e38&quot;
+}</pre></details></article><article><h2>Bellhaven of Kettering</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:22.036872+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Kettering&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Kettering&quot;,
+      &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+      &quot;billing_city&quot;: &quot;Kettering&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45429&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kettering&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Kettering Address 3313 Wilmington Pike Kettering, OH 45429 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Priya Ashby Phone (231) 269-5449 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.818453+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+        &quot;name&quot;: &quot;Kettering Nursing &amp; Rehabilitation&quot;,
+        &quot;parent_id&quot;: &quot;&quot;,
+        &quot;parent_name&quot;: &quot;&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 345-3441&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001B7XZAA3AFALS9GP&quot;,
+        &quot;name&quot;: &quot;Kettering Senior Campus&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pk&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 646-8751&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001WR41PYNWXCAE2X4&quot;,
+        &quot;name&quot;: &quot;Kettering Care Centre&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 600-2603&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+        &quot;name&quot;: &quot;Kettering Nursing &amp; Rehabilitation&quot;,
+        &quot;parent_id&quot;: &quot;&quot;,
+        &quot;parent_name&quot;: &quot;&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 345-3441&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Kettering&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;715441dbf5f7f527df90c585&quot;
+}</pre></details></article><article><h2>Kettering Senior Campus</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:22.505966+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Kettering Senior Campus&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Kettering&quot;,
+      &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+      &quot;billing_city&quot;: &quot;Kettering&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45429&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kettering&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Kettering Address 3313 Wilmington Pike Kettering, OH 45429 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Priya Ashby Phone (231) 269-5449 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.818453+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+        &quot;name&quot;: &quot;Kettering Nursing &amp; Rehabilitation&quot;,
+        &quot;parent_id&quot;: &quot;&quot;,
+        &quot;parent_name&quot;: &quot;&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 345-3441&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001B7XZAA3AFALS9GP&quot;,
+        &quot;name&quot;: &quot;Kettering Senior Campus&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pk&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 646-8751&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001WR41PYNWXCAE2X4&quot;,
+        &quot;name&quot;: &quot;Kettering Care Centre&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 600-2603&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001B7XZAA3AFALS9GP&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001B7XZAA3AFALS9GP&quot;,
+        &quot;name&quot;: &quot;Kettering Senior Campus&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pk&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 646-8751&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 0016KTS1UAWBRXS09J; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;b8699cddac9742cf07000e64&quot;
+}</pre></details></article><article><h2>Kettering Care Centre</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:22.918594+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Kettering Care Centre&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Kettering&quot;,
+      &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+      &quot;billing_city&quot;: &quot;Kettering&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45429&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kettering&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Kettering Address 3313 Wilmington Pike Kettering, OH 45429 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Priya Ashby Phone (231) 269-5449 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.818453+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+        &quot;name&quot;: &quot;Kettering Nursing &amp; Rehabilitation&quot;,
+        &quot;parent_id&quot;: &quot;&quot;,
+        &quot;parent_name&quot;: &quot;&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 345-3441&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001B7XZAA3AFALS9GP&quot;,
+        &quot;name&quot;: &quot;Kettering Senior Campus&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pk&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 646-8751&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001WR41PYNWXCAE2X4&quot;,
+        &quot;name&quot;: &quot;Kettering Care Centre&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 600-2603&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001WR41PYNWXCAE2X4&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001WR41PYNWXCAE2X4&quot;,
+        &quot;name&quot;: &quot;Kettering Care Centre&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;3313 Wilmington Pike&quot;,
+        &quot;billing_city&quot;: &quot;Kettering&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45429&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 600-2603&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;0016KTS1UAWBRXS09J&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 0016KTS1UAWBRXS09J; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;f7a8c223ef5e3bfde91ab61f&quot;
+}</pre></details></article><article><h2>Bellhaven of Marietta</h2><b>applied</b><p>Exact facility identity; old parent differs and both lifetime revenue and AR are positive. Approve successor creation and CHOW link only. Preserve all old billing and parent fields.</p><p>2026-11-16T19:38:23.367447+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;chow&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Marietta&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Marietta&quot;,
+      &quot;billing_street&quot;: &quot;805 Colegate Dr&quot;,
+      &quot;billing_city&quot;: &quot;Marietta&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45750&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marietta&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Marietta Address 805 Colegate Dr Marietta, OH 45750 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Rosa Dietz Phone (614) 337-1967 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:46.327961+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001A34WFSUYHCRBLFT&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Marietta&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;805 Colegate Drive&quot;,
+        &quot;billing_city&quot;: &quot;Marietta&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45750&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 353-5019&quot;,
+        &quot;lifetime_revenue&quot;: 51250,
+        &quot;outstanding_ar&quot;: 3800,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Marietta&quot;,
+        &quot;billing_street&quot;: &quot;805 Colegate Dr&quot;,
+        &quot;billing_city&quot;: &quot;Marietta&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45750&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;note&quot;: &quot;CHOW successor of 001A34WFSUYHCRBLFT&quot;
+      }
+    },
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001A34WFSUYHCRBLFT&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001A34WFSUYHCRBLFT&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Marietta&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;805 Colegate Drive&quot;,
+        &quot;billing_city&quot;: &quot;Marietta&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45750&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(419) 353-5019&quot;,
+        &quot;lifetime_revenue&quot;: 51250,
+        &quot;outstanding_ar&quot;: 3800,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;chow_current_account&quot;: &quot;$created&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;2f333d2dea0787a81b1b88a7&quot;
+}</pre></details></article><article><h2>Bellhaven of Owosso</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:24.408723+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Owosso&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Owosso&quot;,
+      &quot;billing_street&quot;: &quot;1120 W Main St&quot;,
+      &quot;billing_city&quot;: &quot;Owosso&quot;,
+      &quot;billing_state&quot;: &quot;MI&quot;,
+      &quot;billing_zip&quot;: &quot;48867&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-owosso&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Owosso Address 1120 W Main St Owosso, MI 48867 Care Offerings Assisted Living Administrator Gloria Lambert Phone (734) 503-1363 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:47.395390+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001EGU7BMJ942ZTRE6&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Owosso&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1120 W Main St&quot;,
+        &quot;billing_city&quot;: &quot;Owosso&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48867&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(734) 503-1363&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001QU150PM4Z15UA71&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Owosso&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1120 West Main Street&quot;,
+        &quot;billing_city&quot;: &quot;Owosso&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48867&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 383-5991&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001QU150PM4Z15UA71&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001QU150PM4Z15UA71&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Owosso&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1120 West Main Street&quot;,
+        &quot;billing_city&quot;: &quot;Owosso&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;48867&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 383-5991&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;001EGU7BMJ942ZTRE6&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 001EGU7BMJ942ZTRE6; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;427f79fc2cb1a23e63c54770&quot;
+}</pre></details></article><article><h2>Harborview Nursing &amp; Rehab of Port Clinton</h2><b>applied</b><p>Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.</p><p>2026-11-16T19:38:24.847254+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;duplicate&quot;,
+  &quot;title&quot;: &quot;Harborview Nursing &amp; Rehab of Port Clinton&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Port Clinton&quot;,
+      &quot;billing_street&quot;: &quot;1420 Harbor Point Dr&quot;,
+      &quot;billing_city&quot;: &quot;Port Clinton&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;43452&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-port-clinton&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Port Clinton Address 1420 Harbor Point Dr Port Clinton, OH 43452 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Brenda Whitfield Phone (330) 733-6423 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:45.462135+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001UELXDAKFRKB8932&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Port Clinton&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1420 Harbor Point Dr&quot;,
+        &quot;billing_city&quot;: &quot;Port Clinton&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43452&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(614) 512-8712&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      {
+        &quot;account_id&quot;: &quot;001JD2MWRA74LTSN24&quot;,
+        &quot;name&quot;: &quot;Harborview Nursing &amp; Rehab of Port Clinton&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1420 Harbor Point Drive&quot;,
+        &quot;billing_city&quot;: &quot;Port Clinton&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43452&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 314-1338&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001JD2MWRA74LTSN24&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001JD2MWRA74LTSN24&quot;,
+        &quot;name&quot;: &quot;Harborview Nursing &amp; Rehab of Port Clinton&quot;,
+        &quot;parent_id&quot;: &quot;001FJZYHR7MLFMNPLL&quot;,
+        &quot;parent_name&quot;: &quot;Harborview Care Group (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1420 Harbor Point Drive&quot;,
+        &quot;billing_city&quot;: &quot;Port Clinton&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43452&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 314-1338&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;duplicate_of_account&quot;: &quot;001UELXDAKFRKB8932&quot;,
+        &quot;status&quot;: &quot;Inactive&quot;,
+        &quot;note&quot;: &quot;Duplicate of 001UELXDAKFRKB8932; same published facility address. Historical aliases retained in audit evidence.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;5b53c217983ed33c370ce744&quot;
+}</pre></details></article><article><h2>Bellhaven of Portsmouth</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:25.300225+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Portsmouth&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Portsmouth&quot;,
+      &quot;billing_street&quot;: &quot;2222 Gallia St&quot;,
+      &quot;billing_city&quot;: &quot;Portsmouth&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45662&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-portsmouth&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Portsmouth Address 2222 Gallia St Portsmouth, OH 45662 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Tanya Quinn Phone (330) 431-2495 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:47.585389+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001CF3LDWVRGL09P4F&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Portsmouth&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2222 Gallia St&quot;,
+        &quot;billing_city&quot;: &quot;Portsmouth&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45626&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 431-2495&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001CF3LDWVRGL09P4F&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001CF3LDWVRGL09P4F&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Portsmouth&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2222 Gallia St&quot;,
+        &quot;billing_city&quot;: &quot;Portsmouth&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45626&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(330) 431-2495&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;billing_zip&quot;: &quot;45662&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;a255253716b4eaa451576a06&quot;
+}</pre></details></article><article><h2>Bellhaven of Tiffin</h2><b>applied</b><p>Exact facility identity; old parent differs and both lifetime revenue and AR are positive. Approve successor creation and CHOW link only. Preserve all old billing and parent fields.</p><p>2026-11-16T19:38:25.730637+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;chow&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Tiffin&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Tiffin&quot;,
+      &quot;billing_street&quot;: &quot;45 St Lawrence Dr&quot;,
+      &quot;billing_city&quot;: &quot;Tiffin&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44883&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-tiffin&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Tiffin Address 45 St Lawrence Dr Tiffin, OH 44883 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Walt Osei Phone (260) 589-2589 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:46.164605+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001U6RW32TY0WSXZZB&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Tiffin&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;45 St Lawrence Dr&quot;,
+        &quot;billing_city&quot;: &quot;Tiffin&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44883&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(614) 829-9278&quot;,
+        &quot;lifetime_revenue&quot;: 84000,
+        &quot;outstanding_ar&quot;: 12400,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Tiffin&quot;,
+        &quot;billing_street&quot;: &quot;45 St Lawrence Dr&quot;,
+        &quot;billing_city&quot;: &quot;Tiffin&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44883&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;note&quot;: &quot;CHOW successor of 001U6RW32TY0WSXZZB&quot;
+      }
+    },
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001U6RW32TY0WSXZZB&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001U6RW32TY0WSXZZB&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Tiffin&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;45 St Lawrence Dr&quot;,
+        &quot;billing_city&quot;: &quot;Tiffin&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44883&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(614) 829-9278&quot;,
+        &quot;lifetime_revenue&quot;: 84000,
+        &quot;outstanding_ar&quot;: 12400,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;chow_current_account&quot;: &quot;$created&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;e8c5e28e833597a1538d6d6a&quot;
+}</pre></details></article><article><h2>Bellhaven of Zanesville</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:26.787668+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Zanesville&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;Bellhaven of Zanesville&quot;,
+      &quot;billing_street&quot;: &quot;2680 Maple Ave&quot;,
+      &quot;billing_city&quot;: &quot;Zanesville&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;43701&quot;,
+      &quot;care_type&quot;: &quot;Short-Term Rehabilitation &amp; Nursing&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-zanesville&quot;,
+      &quot;evidence&quot;: &quot;Bellhaven of Zanesville Address 2680 Maple Ave Zanesville, OH 43701 Care Offerings Short-Term Rehabilitation &amp; Nursing Administrator Dale Amato Phone (814) 599-2533 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:46.678966+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;001H1JMVZWP46D5VUF&quot;,
+        &quot;name&quot;: &quot;Cedar Trail of Zanesville&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2680 Maple Avenue&quot;,
+        &quot;billing_city&quot;: &quot;Zanesville&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43701&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 817-8191&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001H1JMVZWP46D5VUF&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001H1JMVZWP46D5VUF&quot;,
+        &quot;name&quot;: &quot;Cedar Trail of Zanesville&quot;,
+        &quot;parent_id&quot;: &quot;001FWSQ30SFW6S7604&quot;,
+        &quot;parent_name&quot;: &quot;Cedar Trail Communities (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2680 Maple Avenue&quot;,
+        &quot;billing_city&quot;: &quot;Zanesville&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;43701&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(517) 817-8191&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;Bellhaven of Zanesville&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;e5a3bccfbe19f916c1c10a59&quot;
+}</pre></details></article><article><h2>The Arbors at Bellhaven - Dayton</h2><b>applied</b><p>Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.</p><p>2026-11-16T19:38:30.251189+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;fix&quot;,
+  &quot;title&quot;: &quot;The Arbors at Bellhaven - Dayton&quot;,
+  &quot;evidence&quot;: {
+    &quot;website&quot;: {
+      &quot;name&quot;: &quot;The Arbors at Bellhaven - Dayton&quot;,
+      &quot;billing_street&quot;: &quot;2210 Salem Ave&quot;,
+      &quot;billing_city&quot;: &quot;Dayton&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;45406&quot;,
+      &quot;care_type&quot;: &quot;Memory Support&quot;,
+      &quot;source_url&quot;: &quot;https://analyst-assessment-production.up.railway.app/communities/the-arbors-at-bellhaven-dayton&quot;,
+      &quot;evidence&quot;: &quot;The Arbors at Bellhaven - Dayton Address 2210 Salem Ave Dayton, OH 45406 Care Offerings Memory Support Administrator Ray Novak Phone (260) 254-7592 \u2190 Back to all communities&quot;,
+      &quot;observed_at&quot;: &quot;2026-11-16T19:36:44.943378+00:00&quot;
+    },
+    &quot;candidates&quot;: [
+      {
+        &quot;account_id&quot;: &quot;0010KJFP601YNTZVDA&quot;,
+        &quot;name&quot;: &quot;Arbors at Bellhaven Dayton&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2210 Salem Ave&quot;,
+        &quot;billing_city&quot;: &quot;Dayton&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45406&quot;,
+        &quot;care_type&quot;: &quot;Memory Care&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 659-9837&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      }
+    ],
+    &quot;rule&quot;: &quot;Exact normalized street + city/state, or exact name + city/state. Street identity outranks name; Bellhaven current copy preferred, then revenue-bearing copy, then stable ID.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;0010KJFP601YNTZVDA&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;0010KJFP601YNTZVDA&quot;,
+        &quot;name&quot;: &quot;Arbors at Bellhaven Dayton&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2210 Salem Ave&quot;,
+        &quot;billing_city&quot;: &quot;Dayton&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;45406&quot;,
+        &quot;care_type&quot;: &quot;Memory Care&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(216) 659-9837&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;name&quot;: &quot;The Arbors at Bellhaven - Dayton&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;54eb495ecfabfa9cb13af542&quot;
+}</pre></details></article><article><h2>Bellhaven Care Center of Alliance</h2><b>applied</b><p>Absent from the complete 35-location crawl. Flag Needs Review while retaining parent and financial history; website absence alone does not establish a new owner. Sandusky has a Millstone record at the same address, which warrants investigation rather than a speculative transfer.</p><p>2026-11-16T19:38:30.659032+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;not_listed&quot;,
+  &quot;title&quot;: &quot;Bellhaven Care Center of Alliance&quot;,
+  &quot;evidence&quot;: {
+    &quot;account&quot;: {
+      &quot;account_id&quot;: &quot;00116ETS45BL7DTQP7&quot;,
+      &quot;name&quot;: &quot;Bellhaven Care Center of Alliance&quot;,
+      &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+      &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+      &quot;billing_street&quot;: &quot;1785 Freshley Ave&quot;,
+      &quot;billing_city&quot;: &quot;Alliance&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44601&quot;,
+      &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+      &quot;status&quot;: &quot;Active&quot;,
+      &quot;phone&quot;: &quot;(734) 358-4538&quot;,
+      &quot;lifetime_revenue&quot;: 0,
+      &quot;outstanding_ar&quot;: 0,
+      &quot;chow_current_account&quot;: &quot;&quot;,
+      &quot;duplicate_of_account&quot;: &quot;&quot;,
+      &quot;note&quot;: &quot;&quot;,
+      &quot;created_by_candidate&quot;: false,
+      &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+    },
+    &quot;directory_urls&quot;: [
+      &quot;https://analyst-assessment-production.up.railway.app/communities/amberly-manor&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-court-of-altoona&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-crossings-of-lima&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-gardens-of-monroe&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-healthcare-centre-of-ashland&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-meadows-of-findlay&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-rehabilitation-nursing-of-grove-city&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-shores-of-erie&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-terrace-of-akron&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-willow-creek&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-woods-of-toledo&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-sycamore-ridge&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-union-square&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-ashtabula&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-batavia&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-carlisle&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chagrin-falls&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chesterton&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-defiance&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-goshen&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kalamazoo&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kettering&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-maplewood&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marietta&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marion&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-meadville&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-new-carlisle&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-owosso&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-port-clinton&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-portsmouth&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-saline&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-tiffin&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-wooster&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-zanesville&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/the-arbors-at-bellhaven-dayton&quot;
+    ],
+    &quot;rule&quot;: &quot;Absent from complete website crawl. Absence alone does not prove a sale or closure; preserve parent and billing, flag Needs Review.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;00116ETS45BL7DTQP7&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;00116ETS45BL7DTQP7&quot;,
+        &quot;name&quot;: &quot;Bellhaven Care Center of Alliance&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;1785 Freshley Ave&quot;,
+        &quot;billing_city&quot;: &quot;Alliance&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44601&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(734) 358-4538&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;status&quot;: &quot;Needs Review&quot;,
+        &quot;note&quot;: &quot;Not listed on Bellhaven website as of 2026-11-16. Ownership unconfirmed; verify before re-parenting or deactivation.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;28a832e343fd95d6c0054200&quot;
+}</pre></details></article><article><h2>Bellhaven of Coldwater</h2><b>applied</b><p>Absent from the complete 35-location crawl. Flag Needs Review while retaining parent and financial history; website absence alone does not establish a new owner. Sandusky has a Millstone record at the same address, which warrants investigation rather than a speculative transfer.</p><p>2026-11-16T19:38:31.095339+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;not_listed&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Coldwater&quot;,
+  &quot;evidence&quot;: {
+    &quot;account&quot;: {
+      &quot;account_id&quot;: &quot;0016PVXH4B25HWR7QE&quot;,
+      &quot;name&quot;: &quot;Bellhaven of Coldwater&quot;,
+      &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+      &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+      &quot;billing_street&quot;: &quot;90 N Michigan Ave&quot;,
+      &quot;billing_city&quot;: &quot;Coldwater&quot;,
+      &quot;billing_state&quot;: &quot;MI&quot;,
+      &quot;billing_zip&quot;: &quot;49036&quot;,
+      &quot;care_type&quot;: &quot;Assisted Living&quot;,
+      &quot;status&quot;: &quot;Active&quot;,
+      &quot;phone&quot;: &quot;(814) 581-1138&quot;,
+      &quot;lifetime_revenue&quot;: 0,
+      &quot;outstanding_ar&quot;: 0,
+      &quot;chow_current_account&quot;: &quot;&quot;,
+      &quot;duplicate_of_account&quot;: &quot;&quot;,
+      &quot;note&quot;: &quot;&quot;,
+      &quot;created_by_candidate&quot;: false,
+      &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+    },
+    &quot;directory_urls&quot;: [
+      &quot;https://analyst-assessment-production.up.railway.app/communities/amberly-manor&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-court-of-altoona&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-crossings-of-lima&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-gardens-of-monroe&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-healthcare-centre-of-ashland&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-meadows-of-findlay&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-rehabilitation-nursing-of-grove-city&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-shores-of-erie&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-terrace-of-akron&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-willow-creek&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-woods-of-toledo&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-sycamore-ridge&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-union-square&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-ashtabula&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-batavia&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-carlisle&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chagrin-falls&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chesterton&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-defiance&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-goshen&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kalamazoo&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kettering&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-maplewood&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marietta&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marion&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-meadville&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-new-carlisle&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-owosso&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-port-clinton&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-portsmouth&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-saline&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-tiffin&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-wooster&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-zanesville&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/the-arbors-at-bellhaven-dayton&quot;
+    ],
+    &quot;rule&quot;: &quot;Absent from complete website crawl. Absence alone does not prove a sale or closure; preserve parent and billing, flag Needs Review.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;0016PVXH4B25HWR7QE&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;0016PVXH4B25HWR7QE&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Coldwater&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;90 N Michigan Ave&quot;,
+        &quot;billing_city&quot;: &quot;Coldwater&quot;,
+        &quot;billing_state&quot;: &quot;MI&quot;,
+        &quot;billing_zip&quot;: &quot;49036&quot;,
+        &quot;care_type&quot;: &quot;Assisted Living&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(814) 581-1138&quot;,
+        &quot;lifetime_revenue&quot;: 0,
+        &quot;outstanding_ar&quot;: 0,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;status&quot;: &quot;Needs Review&quot;,
+        &quot;note&quot;: &quot;Not listed on Bellhaven website as of 2026-11-16. Ownership unconfirmed; verify before re-parenting or deactivation.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;d78b3f0013bee9309fee4d6a&quot;
+}</pre></details></article><article><h2>Bellhaven of Sandusky</h2><b>applied</b><p>Absent from the complete 35-location crawl. Flag Needs Review while retaining parent and financial history; website absence alone does not establish a new owner. Sandusky has a Millstone record at the same address, which warrants investigation rather than a speculative transfer.</p><p>2026-11-16T19:38:31.514868+00:00</p><details><summary>Evidence and operations</summary><pre>{
+  &quot;kind&quot;: &quot;not_listed&quot;,
+  &quot;title&quot;: &quot;Bellhaven of Sandusky&quot;,
+  &quot;evidence&quot;: {
+    &quot;account&quot;: {
+      &quot;account_id&quot;: &quot;001SXSF4ELF0Z2LGDM&quot;,
+      &quot;name&quot;: &quot;Bellhaven of Sandusky&quot;,
+      &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+      &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+      &quot;billing_street&quot;: &quot;2715 Columbus Ave&quot;,
+      &quot;billing_city&quot;: &quot;Sandusky&quot;,
+      &quot;billing_state&quot;: &quot;OH&quot;,
+      &quot;billing_zip&quot;: &quot;44870&quot;,
+      &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+      &quot;status&quot;: &quot;Active&quot;,
+      &quot;phone&quot;: &quot;(260) 212-1086&quot;,
+      &quot;lifetime_revenue&quot;: 130000,
+      &quot;outstanding_ar&quot;: 5200,
+      &quot;chow_current_account&quot;: &quot;&quot;,
+      &quot;duplicate_of_account&quot;: &quot;&quot;,
+      &quot;note&quot;: &quot;&quot;,
+      &quot;created_by_candidate&quot;: false,
+      &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+    },
+    &quot;directory_urls&quot;: [
+      &quot;https://analyst-assessment-production.up.railway.app/communities/amberly-manor&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-court-of-altoona&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-crossings-of-lima&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-gardens-of-monroe&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-healthcare-centre-of-ashland&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-meadows-of-findlay&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-rehabilitation-nursing-of-grove-city&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-shores-of-erie&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-terrace-of-akron&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-willow-creek&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-woods-of-toledo&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-sycamore-ridge&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-at-union-square&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-ashtabula&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-batavia&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-carlisle&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chagrin-falls&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-chesterton&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-defiance&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-goshen&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kalamazoo&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-kettering&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-maplewood&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marietta&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-marion&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-meadville&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-new-carlisle&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-owosso&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-port-clinton&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-portsmouth&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-saline&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-tiffin&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-wooster&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/bellhaven-of-zanesville&quot;,
+      &quot;https://analyst-assessment-production.up.railway.app/communities/the-arbors-at-bellhaven-dayton&quot;
+    ],
+    &quot;rule&quot;: &quot;Absent from complete website crawl. Absence alone does not prove a sale or closure; preserve parent and billing, flag Needs Review.&quot;
+  },
+  &quot;operations&quot;: [
+    {
+      &quot;method&quot;: &quot;PATCH&quot;,
+      &quot;account_id&quot;: &quot;001SXSF4ELF0Z2LGDM&quot;,
+      &quot;before&quot;: {
+        &quot;account_id&quot;: &quot;001SXSF4ELF0Z2LGDM&quot;,
+        &quot;name&quot;: &quot;Bellhaven of Sandusky&quot;,
+        &quot;parent_id&quot;: &quot;0015QAPLGS3FVYEEEM&quot;,
+        &quot;parent_name&quot;: &quot;Bellhaven Senior Living (Parent Account)&quot;,
+        &quot;billing_street&quot;: &quot;2715 Columbus Ave&quot;,
+        &quot;billing_city&quot;: &quot;Sandusky&quot;,
+        &quot;billing_state&quot;: &quot;OH&quot;,
+        &quot;billing_zip&quot;: &quot;44870&quot;,
+        &quot;care_type&quot;: &quot;Skilled Nursing&quot;,
+        &quot;status&quot;: &quot;Active&quot;,
+        &quot;phone&quot;: &quot;(260) 212-1086&quot;,
+        &quot;lifetime_revenue&quot;: 130000,
+        &quot;outstanding_ar&quot;: 5200,
+        &quot;chow_current_account&quot;: &quot;&quot;,
+        &quot;duplicate_of_account&quot;: &quot;&quot;,
+        &quot;note&quot;: &quot;&quot;,
+        &quot;created_by_candidate&quot;: false,
+        &quot;updated_at&quot;: &quot;2026-11-16 19:21:14Z&quot;
+      },
+      &quot;body&quot;: {
+        &quot;status&quot;: &quot;Needs Review&quot;,
+        &quot;note&quot;: &quot;Not listed on Bellhaven website as of 2026-11-16. Ownership unconfirmed; verify before re-parenting or deactivation.&quot;
+      }
+    }
+  ],
+  &quot;id&quot;: &quot;eb63477def8a0673c73fa8bc&quot;
+}</pre></details></article>

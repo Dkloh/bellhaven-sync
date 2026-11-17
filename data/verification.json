@@ -1,0 +1,164 @@
+{
+  "verified_at": "2026-11-16T20:15:43.288188+00:00",
+  "accounts_before": 121,
+  "accounts_after": 127,
+  "decisions": {
+    "applied": 29,
+    "rejected": 1
+  },
+  "billing_history_preserved": true,
+  "chow_old_accounts_preserved": true,
+  "rerun": {
+    "locations": 35,
+    "accounts": 127,
+    "new_proposals": 0,
+    "confident_matches": 34
+  },
+  "checks": [
+    {
+      "proposal": "6f622601d04496e6eb266d85",
+      "title": "Amberly Manor",
+      "verified": true
+    },
+    {
+      "proposal": "cdb4e75204de29d508a9e403",
+      "title": "Bellhaven Crossings of Lima",
+      "verified": true
+    },
+    {
+      "proposal": "df06b48e31ef9198b705226f",
+      "title": "Cedar Trail of Monroe",
+      "verified": true
+    },
+    {
+      "proposal": "e3b4a19537760d0d758d144b",
+      "title": "Monroe Gardens Care Center",
+      "verified": true
+    },
+    {
+      "proposal": "1a8587ab057d316e17b6cab2",
+      "title": "Bellhaven Meadows of Findlay",
+      "verified": true
+    },
+    {
+      "proposal": "e214aa1667ca68b776d01bb2",
+      "title": "Bellhaven Rehabilitation & Nursing of Grove City",
+      "verified": true
+    },
+    {
+      "proposal": "896f812c4fce53d25b437f05",
+      "title": "Bellhaven Shores of Erie",
+      "verified": true
+    },
+    {
+      "proposal": "5e624b84d0bf045920e92d94",
+      "title": "Harborview Shores of Erie",
+      "verified": true
+    },
+    {
+      "proposal": "585e3fcf85bc5228633a3931",
+      "title": "Bellhaven Willow Creek",
+      "verified": true
+    },
+    {
+      "proposal": "3377aed4603da01f93e3dd5d",
+      "title": "Bellhaven at Sycamore Ridge",
+      "verified": true
+    },
+    {
+      "proposal": "207017c47ca35b055cd426f9",
+      "title": "Bellhaven at Union Square",
+      "verified": true
+    },
+    {
+      "proposal": "89a9d40d031f9f7f5b545fb6",
+      "title": "Bellhaven of Ashtabula",
+      "verified": true
+    },
+    {
+      "proposal": "f0dc58ac0bed2426ed745808",
+      "title": "Bellhaven of Batavia",
+      "verified": true
+    },
+    {
+      "proposal": "aa23ce46b558496dd0881076",
+      "title": "Bellhaven of Carlisle",
+      "verified": true
+    },
+    {
+      "proposal": "69414d493d7de933236c3e35",
+      "title": "Bellhaven of Chagrin Falls",
+      "verified": true
+    },
+    {
+      "proposal": "f240a2587d907f83d98d0e38",
+      "title": "Bellhaven of Chesterton",
+      "verified": true
+    },
+    {
+      "proposal": "715441dbf5f7f527df90c585",
+      "title": "Bellhaven of Kettering",
+      "verified": true
+    },
+    {
+      "proposal": "b8699cddac9742cf07000e64",
+      "title": "Kettering Senior Campus",
+      "verified": true
+    },
+    {
+      "proposal": "f7a8c223ef5e3bfde91ab61f",
+      "title": "Kettering Care Centre",
+      "verified": true
+    },
+    {
+      "proposal": "2f333d2dea0787a81b1b88a7",
+      "title": "Bellhaven of Marietta",
+      "verified": true
+    },
+    {
+      "proposal": "427f79fc2cb1a23e63c54770",
+      "title": "Bellhaven of Owosso",
+      "verified": true
+    },
+    {
+      "proposal": "5b53c217983ed33c370ce744",
+      "title": "Harborview Nursing & Rehab of Port Clinton",
+      "verified": true
+    },
+    {
+      "proposal": "a255253716b4eaa451576a06",
+      "title": "Bellhaven of Portsmouth",
+      "verified": true
+    },
+    {
+      "proposal": "e8c5e28e833597a1538d6d6a",
+      "title": "Bellhaven of Tiffin",
+      "verified": true
+    },
+    {
+      "proposal": "e5a3bccfbe19f916c1c10a59",
+      "title": "Bellhaven of Zanesville",
+      "verified": true
+    },
+    {
+      "proposal": "54eb495ecfabfa9cb13af542",
+      "title": "The Arbors at Bellhaven - Dayton",
+      "verified": true
+    },
+    {
+      "proposal": "28a832e343fd95d6c0054200",
+      "title": "Bellhaven Care Center of Alliance",
+      "verified": true
+    },
+    {
+      "proposal": "d78b3f0013bee9309fee4d6a",
+      "title": "Bellhaven of Coldwater",
+      "verified": true
+    },
+    {
+      "proposal": "eb63477def8a0673c73fa8bc",
+      "title": "Bellhaven of Sandusky",
+      "verified": true
+    }
+  ]
+}

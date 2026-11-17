@@ -1,0 +1,242 @@
+[
+  {
+    "id": "6f622601d04496e6eb266d85",
+    "title": "Amberly Manor",
+    "kind": "missing",
+    "decision": "approve",
+    "reason": "Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.",
+    "state": "applied"
+  },
+  {
+    "id": "cdb4e75204de29d508a9e403",
+    "title": "Bellhaven Crossings of Lima",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "df06b48e31ef9198b705226f",
+    "title": "Cedar Trail of Monroe",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "e3b4a19537760d0d758d144b",
+    "title": "Monroe Gardens Care Center",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "053776461ccfca42995e2ba4",
+    "title": "Bellhaven Healthcare Centre of Ashland",
+    "kind": "fix",
+    "decision": "reject",
+    "reason": "Name-only spelling/style difference: Health Care Center vs Healthcare Centre identifies the same facility with exact address. Retain this valid CRM alias; no ownership or address correction needed.",
+    "state": "rejected"
+  },
+  {
+    "id": "1a8587ab057d316e17b6cab2",
+    "title": "Bellhaven Meadows of Findlay",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "e214aa1667ca68b776d01bb2",
+    "title": "Bellhaven Rehabilitation & Nursing of Grove City",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "896f812c4fce53d25b437f05",
+    "title": "Bellhaven Shores of Erie",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "5e624b84d0bf045920e92d94",
+    "title": "Harborview Shores of Erie",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "585e3fcf85bc5228633a3931",
+    "title": "Bellhaven Willow Creek",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "3377aed4603da01f93e3dd5d",
+    "title": "Bellhaven at Sycamore Ridge",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "207017c47ca35b055cd426f9",
+    "title": "Bellhaven at Union Square",
+    "kind": "missing",
+    "decision": "approve",
+    "reason": "Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.",
+    "state": "applied"
+  },
+  {
+    "id": "89a9d40d031f9f7f5b545fb6",
+    "title": "Bellhaven of Ashtabula",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "f0dc58ac0bed2426ed745808",
+    "title": "Bellhaven of Batavia",
+    "kind": "missing",
+    "decision": "approve",
+    "reason": "Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.",
+    "state": "applied"
+  },
+  {
+    "id": "aa23ce46b558496dd0881076",
+    "title": "Bellhaven of Carlisle",
+    "kind": "missing",
+    "decision": "approve",
+    "reason": "Published facility address has no CRM match. Same-name and nearby accounts have different physical addresses; create a separate current facility.",
+    "state": "applied"
+  },
+  {
+    "id": "69414d493d7de933236c3e35",
+    "title": "Bellhaven of Chagrin Falls",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "f240a2587d907f83d98d0e38",
+    "title": "Bellhaven of Chesterton",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "715441dbf5f7f527df90c585",
+    "title": "Bellhaven of Kettering",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "b8699cddac9742cf07000e64",
+    "title": "Kettering Senior Campus",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "f7a8c223ef5e3bfde91ab61f",
+    "title": "Kettering Care Centre",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "2f333d2dea0787a81b1b88a7",
+    "title": "Bellhaven of Marietta",
+    "kind": "chow",
+    "decision": "approve",
+    "reason": "Exact facility identity; old parent differs and both lifetime revenue and AR are positive. Approve successor creation and CHOW link only. Preserve all old billing and parent fields.",
+    "state": "applied"
+  },
+  {
+    "id": "427f79fc2cb1a23e63c54770",
+    "title": "Bellhaven of Owosso",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "5b53c217983ed33c370ce744",
+    "title": "Harborview Nursing & Rehab of Port Clinton",
+    "kind": "duplicate",
+    "decision": "approve",
+    "reason": "Reviewed co-located candidates, care and historical brands. One published facility at this address; retain the selected current Bellhaven copy (or deterministic zero-revenue Kettering survivor). Mark losing copy Inactive and link duplicate; retain its parent and financial history.",
+    "state": "applied"
+  },
+  {
+    "id": "a255253716b4eaa451576a06",
+    "title": "Bellhaven of Portsmouth",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "e8c5e28e833597a1538d6d6a",
+    "title": "Bellhaven of Tiffin",
+    "kind": "chow",
+    "decision": "approve",
+    "reason": "Exact facility identity; old parent differs and both lifetime revenue and AR are positive. Approve successor creation and CHOW link only. Preserve all old billing and parent fields.",
+    "state": "applied"
+  },
+  {
+    "id": "e5a3bccfbe19f916c1c10a59",
+    "title": "Bellhaven of Zanesville",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "54eb495ecfabfa9cb13af542",
+    "title": "The Arbors at Bellhaven - Dayton",
+    "kind": "fix",
+    "decision": "approve",
+    "reason": "Reviewed published name, address and care against CRM candidates. Correct identity supported by exact normalized address or exact name and city/state. Apply displayed corrections; direct parent changes have no outstanding AR.",
+    "state": "applied"
+  },
+  {
+    "id": "28a832e343fd95d6c0054200",
+    "title": "Bellhaven Care Center of Alliance",
+    "kind": "not_listed",
+    "decision": "approve",
+    "reason": "Absent from the complete 35-location crawl. Flag Needs Review while retaining parent and financial history; website absence alone does not establish a new owner. Sandusky has a Millstone record at the same address, which warrants investigation rather than a speculative transfer.",
+    "state": "applied"
+  },
+  {
+    "id": "d78b3f0013bee9309fee4d6a",
+    "title": "Bellhaven of Coldwater",
+    "kind": "not_listed",
+    "decision": "approve",
+    "reason": "Absent from the complete 35-location crawl. Flag Needs Review while retaining parent and financial history; website absence alone does not establish a new owner. Sandusky has a Millstone record at the same address, which warrants investigation rather than a speculative transfer.",
+    "state": "applied"
+  },
+  {
+    "id": "eb63477def8a0673c73fa8bc",
+    "title": "Bellhaven of Sandusky",
+    "kind": "not_listed",
+    "decision": "approve",
+    "reason": "Absent from the complete 35-location crawl. Flag Needs Review while retaining parent and financial history; website absence alone does not establish a new owner. Sandusky has a Millstone record at the same address, which warrants investigation rather than a speculative transfer.",
+    "state": "applied"
+  }
+]
